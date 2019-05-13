@@ -1,0 +1,20 @@
+.colors-container {
+  display: flex;
+}
+
+.test-color {
+  height: 5rem;
+  flex-grow: 1;
+}
+
+.is-primary-color {
+  background: $primary;
+}
+
+.is-secondary-color {
+  background: $secondary;
+}
+
+.is-tertiary-color {
+  background: $tertiary;
+}

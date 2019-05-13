@@ -1,0 +1,24 @@
+.container {
+  margin: 0 auto;
+  position: relative;
+
+  @include desktop() {
+    max-width: $desktop - ($border * 2);
+    width: $desktop - ($border * 2);
+
+    &.is-fluid {
+      margin-left: $border;
+      margin-right: $border;
+      max-width: none;
+      width: auto;
+    }
+  }
+  @include widescreen() {
+    max-width: $widescreen - ($border * 2);
+    width: $widescreen - ($border * 2);
+  }
+  @include fullhd() {
+    max-width: $fullhd - ($border * 2);
+    width: $fullhd - ($border * 2);
+  }
+}
