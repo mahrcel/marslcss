@@ -1,10 +1,12 @@
 .container {
   margin: 0 auto;
   position: relative;
+  padding: ($border / 2);
 
   @include desktop() {
     max-width: $desktop - ($border * 2);
     width: $desktop - ($border * 2);
+    padding: 0;
 
     &.is-fluid {
       margin-left: $border;
@@ -16,9 +18,11 @@
   @include widescreen() {
     max-width: $widescreen - ($border * 2);
     width: $widescreen - ($border * 2);
+    padding: 0;
   }
   @include fullhd() {
     max-width: $fullhd - ($border * 2);
     width: $fullhd - ($border * 2);
+    padding: 0;
   }
 }

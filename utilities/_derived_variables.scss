@@ -1,0 +1,18 @@
+// theme
+
+$background-color: if($use-dark-theme, $dark, $light);
+$text-color: if($use-dark-theme, $light, $dark);
+$text-color-quote: if(
+  $use-dark-theme,
+  darken($light, 23%),
+  lighten($dark, 23%)
+);
+/// BUTONS
+
+$button-color: if($use-dark-theme, $light, $dark);
+$button-hover-txt-color: if($use-dark-theme, $dark, $light);
+
+/// typography, link styling
+
+$link-color: $primary;
+$link-hover-color: lighten($link-color, 10%);

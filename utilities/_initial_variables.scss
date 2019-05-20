@@ -1,11 +1,15 @@
+/*! marsl.css | MIT License | github.com/mahrcel/marslcss */
+
 // colors
 
-$dark: #262b31;
-$light: #e4e2e2;
+$use-dark-theme: false !default;
 
-$primary: #4ecdc4;
-$secondary: #4bcc6d;
-$tertiary: #ff6b6b;
+$dark: #262b31 !default;
+$light: #e4e2e2 !default;
+
+$primary: #4ecdc4 !default;
+$secondary: #4bcc6d !default;
+$tertiary: #ff6b6b !default;
 
 //typography
 

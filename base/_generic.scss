@@ -1,9 +1,23 @@
 html {
-  background-color: $dark;
+  background-color: $background-color;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
 body {
-  color: $light;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+img {
+  @if $use-dark-theme {
+    opacity: 0.9;
+  }
 }

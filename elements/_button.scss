@@ -1,0 +1,41 @@
+// use currentColor, cause it's nice
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+  background: $background-color;
+  color: $button-color;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  user-select: none;
+  -webkit-appearance: unset;
+  padding: 0.8rem 2.5rem;
+  border-radius: 5px;
+  border: 2px solid currentColor;
+  position: relative;
+  transition: all 250ms;
+
+  &:hover {
+    color: $button-hover-txt-color;
+    background-color: $button-color;
+    border-color: $button-color;
+  }
+
+  &:active {
+    transform: translate(0, 2px);
+  }
+}
+
+.is-primary {
+  border-color: $primary;
+  color: $primary;
+  &:hover {
+    color: $light;
+    border-color: $primary;
+    background-color: $primary;
+  }
+}

@@ -3,3 +3,14 @@ body {
   font-size: $size-base;
   text-size-adjust: 100%;
 }
+
+blockquote {
+  border-left: 1px solid $text-color-quote;
+  margin: 0 0 1rem;
+  padding: 0.5rem 1rem 0 0.5rem;
+  color: $text-color-quote;
+
+  p:first-child {
+    margin-top: 0;
+  }
+}
