@@ -6,6 +6,12 @@
   }
 }
 
+@mixin mobile-only() {
+  @media only screen and (max-width: $tablet - 1px) {
+    @content;
+  }
+}
+
 @mixin tablet() {
   @media screen and (min-width: $tablet) {
     @content;

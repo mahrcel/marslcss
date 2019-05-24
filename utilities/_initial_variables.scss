@@ -1,24 +1,29 @@
 /*! marsl.css | MIT License | github.com/mahrcel/marslcss */
 
 // colors
+$use-dark-theme: true !default;
 
-$use-dark-theme: false !default;
+$dark: #292a2b !default;
+$light: #fafafa !default;
 
-$dark: #262b31 !default;
-$light: #e4e2e2 !default;
-
-$primary: #4ecdc4 !default;
+$primary: #00d3c5 !default;
 $secondary: #4bcc6d !default;
 $tertiary: #ff6b6b !default;
 
-//typography
+$error: #e02030 !default;
+$success: #34f73d !default;
 
-//use OS font stack
+// animation
+$animation-speed: 150ms;
+
+// typography
+
+// use OS font stack
 $font-stack-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !default;
 $font-stack-monospace: monospace !default;
 
-//text and border size is dynamically calculated via rem
+// text and border size is dynamically calculated via rem
 $size-base: 16px;
 
 $size-1: 3rem !default;

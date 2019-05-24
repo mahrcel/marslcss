@@ -2,6 +2,8 @@ html {
   background-color: $background-color;
   overflow-x: hidden;
   overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {

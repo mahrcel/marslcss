@@ -25,4 +25,8 @@
     width: $fullhd - ($border * 2);
     padding: 0;
   }
+
+  &:nth-child(0) {
+    padding-top: 0;
+  }
 }

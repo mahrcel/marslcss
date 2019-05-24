@@ -1,10 +1,14 @@
 // use currentColor, cause it's nice
+$button-color: $inverted-bg;
+$button-hover-txt-color: $background-color;
 
 button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
 .button {
+  box-sizing: border-box;
+
   background: $background-color;
   color: $button-color;
   border: none;
@@ -12,17 +16,24 @@ input[type="button"],
   cursor: pointer;
   outline: inherit;
   user-select: none;
-  -webkit-appearance: unset;
+  -webkit-appearance: none;
   padding: 0.8rem 2.5rem;
-  border-radius: 5px;
+  margin: 0.5rem;
   border: 2px solid currentColor;
   position: relative;
-  transition: all 250ms;
+  transition: all $animation-speed;
+  align-items: center;
+  width: auto;
+  height: auto;
+  box-shadow: none;
+  border-radius: 0;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $button-hover-txt-color;
     background-color: $button-color;
-    border-color: $button-color;
+    border: 2px solid $button-color;
+    box-shadow: none;
   }
 
   &:active {

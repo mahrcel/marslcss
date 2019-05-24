@@ -1,4 +1,78 @@
-textarea {
+fieldset {
+  border: 1px solid $inverted-bg;
+  padding: 2rem;
+
+  legend {
+    color: $inverted-bg;
+    padding: 0.4rem 1rem;
+    margin-left: 1rem;
+    position: relative;
+    font-size: 1.1rem;
+    z-index: 10;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: skew(-20deg);
+      border: 1px solid $inverted-bg;
+      z-index: -1;
+    }
+  }
+}
+textarea,
+input {
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
+
+input,
+textarea {
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 2px rgba(24, 24, 24, 0.2);
+  background: $light;
+  padding: 0.5rem;
+  color: $dark;
+  border: 1px solid $form-inactive-color;
+  border-radius: 5px;
+  outline: none;
+  transition: all $animation-speed;
+
+  &:active,
+  &:focus {
+    border: 1px solid $form-active-color;
+    box-shadow: inset 0 1px 2px rgba(17, 17, 17, 0.3);
+  }
+
+  &::placeholder {
+    color: $form-inactive-color;
+  }
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 400;
+
+  // &::after {
+  //   content: "\A";
+  //   white-space: pre;
+  // }
+}
+
+// input[type="color"] {
+//   width: auto;
+//   -webkit-appearance: square-button;
+
+//   &::-webkit-color-swatch-wrapper {
+//     // padding: 0;
+//   }
+
+//   &::-webkit-color-swatch {
+//     border: none;
+//   }
+// }

@@ -1,5 +1,4 @@
 // theme
-
 $background-color: if($use-dark-theme, $dark, $light);
 $text-color: if($use-dark-theme, $light, $dark);
 $text-color-quote: if(
@@ -7,12 +6,12 @@ $text-color-quote: if(
   darken($light, 23%),
   lighten($dark, 23%)
 );
-/// BUTONS
+$inverted-bg: if($use-dark-theme, $light, $dark);
 
-$button-color: if($use-dark-theme, $light, $dark);
-$button-hover-txt-color: if($use-dark-theme, $dark, $light);
+/// forms
+$form-inactive-color: darken($light, 30%);
+$form-active-color: $primary;
 
 /// typography, link styling
-
 $link-color: $primary;
 $link-hover-color: lighten($link-color, 10%);
