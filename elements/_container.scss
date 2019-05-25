@@ -15,16 +15,6 @@
       width: auto;
     }
   }
-  @include widescreen() {
-    max-width: $widescreen - ($border * 2);
-    width: $widescreen - ($border * 2);
-    padding: 0;
-  }
-  @include fullhd() {
-    max-width: $fullhd - ($border * 2);
-    width: $fullhd - ($border * 2);
-    padding: 0;
-  }
 
   &:nth-child(0) {
     padding-top: 0;

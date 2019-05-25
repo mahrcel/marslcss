@@ -18,20 +18,20 @@
   }
 }
 
+@mixin tablet-only() {
+  @media only screen and (max-width: $desktop - 1px) {
+    @content;
+  }
+}
+
 @mixin desktop() {
   @media screen and (min-width: $desktop) {
     @content;
   }
 }
 
-@mixin widescreen() {
-  @media screen and (min-width: $widescreen) {
-    @content;
-  }
-}
-
-@mixin fullhd() {
-  @media screen and (min-width: $fullhd) {
+@mixin desktop-only() {
+  @media only screen and (min-width: $desktop) {
     @content;
   }
 }

@@ -1,4 +1,4 @@
-nav {
+.navigation {
   margin: auto;
   height: 70px;
   align-items: baseline;
@@ -9,22 +9,14 @@ nav {
     max-width: $desktop - ($border * 2);
     padding: 0;
   }
-  @include widescreen() {
-    max-width: $widescreen - ($border * 2);
-    padding: 0;
-  }
-  @include fullhd() {
-    max-width: $fullhd - ($border * 2);
-    padding: 0;
-  }
 
   @include tablet() {
     display: flex;
   }
 
-  h1 {
-    margin: 0;
-    padding: 0;
+  .navbar-brand {
+    font-weight: 400;
+    font-size: 1.5rem;
   }
 
   .navbar-main {
@@ -58,10 +50,10 @@ nav {
       position: fixed;
       top: 0;
       left: 0;
-      padding: 4rem 2rem;
+      padding: 4rem ($border / 2);
       margin: 0;
-      opacity: 0;
-      transition: all 250ms ease-in-out;
+      opacity: 1;
+      transition: all ($animation-speed * 2) ease-in-out;
       z-index: 999;
       visibility: hidden;
 
@@ -69,7 +61,7 @@ nav {
         font-size: 2rem;
 
         a {
-          color: white;
+          color: $light;
         }
       }
 
@@ -92,7 +84,6 @@ nav {
       }
 
       &.active {
-        opacity: 1;
         transform: translateX(0);
         visibility: visible;
       }
@@ -105,7 +96,7 @@ nav {
     .hamburger-slice {
       width: 20px;
       height: 2px;
-      background: white;
+      background: $text-color;
       display: block;
 
       margin: 5px;
@@ -119,7 +110,11 @@ nav {
       position: fixed;
       top: 0;
       right: 0;
-      padding: 2rem;
+      padding: ($border / 2);
+
+      .hamburger-slice {
+        background: $light;
+      }
     }
   }
 }

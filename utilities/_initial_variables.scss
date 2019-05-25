@@ -1,7 +1,7 @@
 /*! marsl.css | MIT License | github.com/mahrcel/marslcss */
 
 // colors
-$use-dark-theme: true !default;
+$use-dark-theme: false !default;
 
 $dark: #292a2b !default;
 $light: #fafafa !default;
@@ -38,5 +38,3 @@ $border: $size-base * 2 !default;
 // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16, thanks to bulma for that
 $tablet: 769px !default;
 $desktop: 960px + ($border * 2) !default;
-$widescreen: 1152px + ($border * 2) !default;
-$fullhd: 1344px + ($border * 2) !default;
