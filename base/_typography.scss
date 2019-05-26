@@ -2,6 +2,7 @@ body {
   font-family: $font-stack-sans-serif;
   font-size: $size-base;
   text-size-adjust: 100%;
+  line-height: auto;
 }
 
 blockquote {
@@ -13,4 +14,8 @@ blockquote {
   p:first-child {
     margin-top: 0;
   }
+}
+
+p {
+  line-height: 1.5rem;
 }
