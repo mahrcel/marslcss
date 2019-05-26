@@ -1,0 +1,39 @@
+.footer {
+  border-top: 1px solid lighten($background-color, 10%);
+  .footer-list {
+    @include tablet() {
+      display: flex;
+      text-align: center;
+      padding: 2rem;
+      align-items: center;
+    }
+
+    .footer-item {
+      @include tablet() {
+        flex: 1;
+      }
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding: 0.5rem;
+        @include tablet() {
+          &:first-child {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    @include tablet() {
+      text-align: center;
+      padding: 0 0 01rem;
+    }
+    padding: 0.5rem;
+  }
+}

@@ -18,3 +18,67 @@
 .is-tertiary-color {
   background: $tertiary;
 }
+
+//// blogroll
+
+.articles {
+  width: 100%;
+}
+
+.img-holder {
+  max-width: 500px;
+  width: 100%;
+  background: rgb(206, 211, 206);
+  height: 100%;
+  background-image: url("/other/scan2test.jpg");
+  background-size: cover;
+}
+
+.article {
+  margin: 5rem 0;
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  min-height: 400px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 60px;
+
+  article {
+    width: 60%;
+    position: relative;
+
+    .text-wrapper {
+      position: absolute;
+      bottom: 20%;
+      left: -40%;
+    }
+
+    h1 {
+      font-weight: 800;
+      font-size: 60px;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 50px;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+    }
+  }
+
+  //   display: float;
+}
+
+.article:nth-child(odd) {
+  text-align: right;
+  justify-content: flex-end;
+  // background: rgb(50, 50, 50);
+}
+
+.article:nth-child(even) {
+  justify-content: flex-start;
+  // background: rgb(75, 75, 75);
+}
