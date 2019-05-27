@@ -32,35 +32,67 @@
   height: 100%;
   background-image: url("/other/scan2test.jpg");
   background-size: cover;
+
+  @include mobile-only() {
+    min-height: 40vh;
+  }
 }
 
 .article {
-  margin: 5rem 0;
-  padding: 1rem;
-  display: flex;
   width: 100%;
-  min-height: 400px;
   font-family: "Montserrat", sans-serif;
   line-height: 60px;
+  padding: 1rem 0;
+  @include tablet() {
+    display: flex;
+    margin: 5rem 0;
+    padding: 1rem;
+    min-height: 400px;
+  }
+
+  @include tablet() {
+    &.odd {
+      text-align: right;
+      justify-content: flex-end;
+
+      .text-wrapper {
+        left: -40%;
+      }
+    }
+
+    &.even {
+      justify-content: flex-start;
+
+      .text-wrapper {
+        right: -40%;
+      }
+    }
+  }
 
   article {
-    width: 60%;
+    @include tablet() {
+      width: 60%;
+    }
     position: relative;
 
     .text-wrapper {
-      position: absolute;
-      bottom: 20%;
-      left: -40%;
+      @include tablet() {
+        position: absolute;
+        bottom: 20%;
+        max-width: 500px;
+      }
     }
 
-    h1 {
-      font-weight: 800;
-      font-size: 60px;
-    }
+    @include tablet() {
+      h1 {
+        font-weight: 800;
+        font-size: 60px;
+      }
 
-    h2 {
-      font-weight: 400;
-      font-size: 50px;
+      h2 {
+        font-weight: 400;
+        font-size: 50px;
+      }
     }
 
     h1,
@@ -72,13 +104,16 @@
   //   display: float;
 }
 
-.article:nth-child(odd) {
-  text-align: right;
-  justify-content: flex-end;
-  // background: rgb(50, 50, 50);
+//test
+
+.invisible {
+  opacity: 0;
+  transform: translateY(50px);
 }
 
-.article:nth-child(even) {
-  justify-content: flex-start;
-  // background: rgb(75, 75, 75);
+.visible {
+  transition: all 500ms ease-in-out;
+  transform: none !important;
+  opacity: 1 !important;
 }
+//second test
