@@ -21,88 +21,88 @@
 
 //// blogroll
 
-.articles {
-  width: 100%;
-}
+// .articles {
+//   width: 100%;
+// }
 
-.img-holder {
-  max-width: 500px;
-  width: 100%;
-  background: rgb(206, 211, 206);
-  height: 100%;
-  background-image: url("/other/scan2test.jpg");
-  background-size: cover;
+// .img-holder {
+//   max-width: 500px;
+//   width: 100%;
+//   background: rgb(206, 211, 206);
+//   height: 100%;
+//   background-image: url("/other/scan2test.jpg");
+//   background-size: cover;
 
-  @include mobile-only() {
-    min-height: 40vh;
-  }
-}
+//   @include mobile-only() {
+//     min-height: 40vh;
+//   }
+// }
 
-.article {
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-  line-height: 60px;
-  padding: 1rem 0;
-  @include tablet() {
-    display: flex;
-    margin: 5rem 0;
-    padding: 1rem;
-    min-height: 400px;
-  }
+// .article {
+//   width: 100%;
+//   font-family: "Montserrat", sans-serif;
+//   line-height: 60px;
+//   padding: 1rem 0;
+//   @include tablet() {
+//     display: flex;
+//     margin: 5rem 0;
+//     padding: 1rem;
+//     min-height: 400px;
+//   }
 
-  @include tablet() {
-    &.odd {
-      text-align: right;
-      justify-content: flex-end;
+//   @include tablet() {
+//     &.odd {
+//       text-align: right;
+//       justify-content: flex-end;
 
-      .text-wrapper {
-        left: -40%;
-      }
-    }
+//       .text-wrapper {
+//         left: -40%;
+//       }
+//     }
 
-    &.even {
-      justify-content: flex-start;
+//     &.even {
+//       justify-content: flex-start;
 
-      .text-wrapper {
-        right: -40%;
-      }
-    }
-  }
+//       .text-wrapper {
+//         right: -40%;
+//       }
+//     }
+//   }
 
-  article {
-    @include tablet() {
-      width: 60%;
-    }
-    position: relative;
+//   article {
+//     @include tablet() {
+//       width: 60%;
+//     }
+//     position: relative;
 
-    .text-wrapper {
-      @include tablet() {
-        position: absolute;
-        bottom: 20%;
-        max-width: 500px;
-      }
-    }
+//     .text-wrapper {
+//       @include tablet() {
+//         position: absolute;
+//         bottom: 20%;
+//         max-width: 500px;
+//       }
+//     }
 
-    @include tablet() {
-      h1 {
-        font-weight: 800;
-        font-size: 60px;
-      }
+//     @include tablet() {
+//       h1 {
+//         font-weight: 800;
+//         font-size: 60px;
+//       }
 
-      h2 {
-        font-weight: 400;
-        font-size: 50px;
-      }
-    }
+//       h2 {
+//         font-weight: 400;
+//         font-size: 50px;
+//       }
+//     }
 
-    h1,
-    h2 {
-      margin: 0;
-    }
-  }
+//     h1,
+//     h2 {
+//       margin: 0;
+//     }
+//   }
 
-  //   display: float;
-}
+//   //   display: float;
+// }
 
 //test
 

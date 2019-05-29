@@ -7,6 +7,7 @@
 
   @include desktop() {
     max-width: $desktop - ($border * 2);
+    margin-bottom: $border / 2;
     padding: 0;
   }
 
@@ -17,6 +18,10 @@
   .navbar-brand {
     font-weight: 400;
     font-size: 1.5rem;
+
+    a {
+      color: $text-color;
+    }
   }
 
   .navbar-main {
