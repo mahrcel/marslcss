@@ -112,7 +112,9 @@
 }
 
 .visible {
-  transition: all 500ms ease-in-out;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  transition-property: transform, opacity;
   transform: none !important;
   opacity: 1 !important;
 }
