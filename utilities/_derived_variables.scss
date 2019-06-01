@@ -3,8 +3,8 @@ $background-color: if($use-dark-theme, $dark, $light);
 $text-color: if($use-dark-theme, $light, $dark);
 $text-color-quote: if(
   $use-dark-theme,
-  darken($light, 40%),
-  lighten($dark, 40%)
+  darken($light, 30%),
+  lighten($dark, 60%)
 );
 $inverted-bg: if($use-dark-theme, $light, $dark);
 
